@@ -1,0 +1,18 @@
+{
+  "tile0": ["AAA", "AAA", "AAA", "AAA"],
+  "tile1": ["ABA", "ABA", "ABA", "AAA"],
+  "tile2": ["BAA", "AAB", "CAA", "AAC"],
+  "tile3": ["BAA", "AAA", "AAB", "CCC"],
+  "tile4": ["ABA", "ABA", "AAA", "AAA"],
+  "tile5": ["ABA", "AAA", "ABA", "AAA"],
+  "tile6": ["ABA", "ABA", "ABA", "ABA"],
+  "rotations": {
+    "tile0": [],
+    "tile1": [1, 2, 3],
+    "tile2": [1, 2, 3],
+    "tile3": [1, 2, 3],
+    "tile4": [1, 2, 3],
+    "tile5": [1],
+    "tile6": []
+  }
+}
