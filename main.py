@@ -7,9 +7,9 @@ from tile import Tile # represents a tile and its possible sides
 from cell import Cell # represents a cell inside the final image
 
 # local directory to the tile-images and data.json
-IMG_DIRECTORY ="tiles/circuit_coding_train"
+IMG_DIRECTORY ="tiles/circuit"
 # how many columns/rows in the final image
-DIMENSION = 40
+DIMENSION = 60
 # size of the final image
 SIZE=1920
 
@@ -151,6 +151,8 @@ def draw_canvas(canvas_grid: list[list[Tile]]):
             if tile is not None:
                 # add the tile image to the final canvas
                 canvas.paste(tile.img.resize((tile_size, tile_size), Image.ANTIALIAS), (i*tile_size, j*tile_size))
+    
+    canvas.save(f"output\\{IMG_DIRECTORY.split('/')[1]}.png")
     canvas.show()
 
 def main():
